@@ -71,7 +71,7 @@ a {
 }
 
 a:hover {
-    color: #E05100;
+    color: #c74d00;
 }
  main {
      grid-area: main;
@@ -80,7 +80,7 @@ a:hover {
  
  p {
     text-align:left;
-    font-size:1.2vw;
+    font-size:2vw;
     position: absolute;
     bottom:12%;
     right:10%;
@@ -116,11 +116,11 @@ aside {
         }
 
     h1 {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     h2 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     nav {
@@ -131,18 +131,18 @@ aside {
 
     ul, li {
         padding: 1%;
-        font-size:4vw;
+        font-size:4.5vw;
        
     }
 
     p {
         text-align:left;
-        font-size:2vw;
+        font-size:2.5vw;
         position: relative;
         bottom:0;
         right:0;
         padding: var(--main-padding);
-        margin-top:3%;
+        margin-top:6%;
      }
 }
 
@@ -159,11 +159,11 @@ aside {
             "footer footer";
     }
     h1 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     h2 {
-        font-size: 4vw;
+        font-size: 5.5vw;
     }
 
     nav {
@@ -174,7 +174,7 @@ aside {
 
     ul, li {
         padding: 1%;
-        font-size:3vw;
+        font-size:3.5vw;
     }
 
     nav {
@@ -185,12 +185,12 @@ aside {
 
     p {
         text-align:left;
-        font-size:1.5vw;
+        font-size:2vw;
         position: relative;
         bottom:0;
         right:0;
         padding: var(--main-padding);
-        margin-top:2%
+        margin-top:3%
      }
 
      ul, li {
@@ -211,6 +211,10 @@ aside {
         padding: var(--main-padding);
      }
 
+     h1 {
+         font-size: 2.5vw;
+     }
+
      main {
          margin: 0 10% 10% 10%;
      }
@@ -221,7 +225,4 @@ aside {
        
     }
 
-        
-    }
-   
 }
