@@ -3,7 +3,7 @@
 }
 
 .container {
-    display:grid;
+    display: grid;
     height: 100vh;
     grid-template-columns: .8fr 1.2fr 1.2fr .8fr;
     grid-template-rows: .3fr 2.4fr .3fr;
@@ -27,12 +27,12 @@ header {
 }
 
 h1 {
-    margin:0;
+    margin: 0;
     font-size: 2.5vw;
 }
 
 h2 {
-    margin-top:0;
+    margin-top: 0;
     font-size: 2vw;
 }
 
@@ -40,16 +40,17 @@ nav {
     grid-area: nav;
     padding: var(--main-padding);
     font-size: 1.5vw;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 /*test*/
 ul a +ul {
-    max-height:0;
-    overflow:hidden;
-    transition:0.5s linear;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s linear;
     }
   ul a:focus + ul {
-    max-height:15em;
+    max-height: 15em;
     }
   /* only select that link , here using the href attribute */
   a[href="nowhere"]:focus {
@@ -57,7 +58,7 @@ ul a +ul {
   }
 
 ul {
-    margin-top:0;
+    margin-top: 0;
 }
 
 li {
@@ -66,8 +67,8 @@ li {
 }
 
 a {
-    text-decoration:none;
-    color:black;
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {
@@ -79,17 +80,17 @@ a:hover {
  }
  
  p {
-    text-align:left;
-    font-size:2vw;
+    text-align: left;
+    font-size: 1.5vw;
     position: absolute;
-    bottom:12%;
-    right:10%;
+    bottom: 12%;
+    right: 10%;
     
  }
 
  img {
-     width:100%;
-     display:block;
+     width: 100%;
+     display: block;
  }
 
 aside {
@@ -98,7 +99,7 @@ aside {
  }
 
  footer {
-     grid-area:footer;
+     grid-area: footer;
      padding: var(--main-padding);
  }
 
@@ -106,7 +107,7 @@ aside {
 
  @media only screen and (max-width: 500px) {
     .container {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: .5fr .3fr 3fr .2fr;
         grid-template-areas:
             "header"
@@ -124,31 +125,31 @@ aside {
     }
 
     nav {
-        padding:0%;
-        overflow:visible;
-        display:flex;
+        padding: 0%;
+        overflow: visible;
+        display: flex;
     }
 
     ul, li {
         padding: 1%;
-        font-size:4.5vw;
+        font-size: 4.5vw;
        
     }
 
     p {
-        text-align:left;
-        font-size:2.5vw;
+        text-align: left;
+        font-size: 2.5vw;
         position: relative;
-        bottom:0;
-        right:0;
+        bottom: 0;
+        right: 0;
         padding: var(--main-padding);
-        margin-top:6%;
+        margin-top: 6%;
      }
 }
 
 /*tablet*/
 
-@media only screen and (min-width:501px) and (max-width:800px) {
+@media only screen and (min-width:501px) and (max-width:1000px) {
     .container {
         grid-template-columns:.5fr 1.5fr;
         grid-template-rows: .5fr .3fr 3fr .2fr;
@@ -158,6 +159,7 @@ aside {
             "nav main"
             "footer footer";
     }
+
     h1 {
         font-size: 6vw;
     }
@@ -167,35 +169,28 @@ aside {
     }
 
     nav {
-        padding:0%;
-        overflow:visible;
-        display:flex;
+        overflow: visible;
+        display: flex;
     }
 
     ul, li {
         padding: 1%;
-        font-size:3.5vw;
-    }
-
-    nav {
-        padding:0%;
-        overflow:visible;
-        display:flex;
+        font-size: 3.5vw;
     }
 
     p {
-        text-align:left;
-        font-size:2vw;
+        text-align: left;
+        font-size: 2vw;
         position: relative;
-        bottom:0;
-        right:0;
+        bottom: 0;
+        right: 0;
         padding: var(--main-padding);
-        margin-top:3%
+        margin-top: 3%
      }
 
      ul, li {
         padding: 1%;
-        margin-top:0;
+        margin-top: 0;
      }
 }
 
@@ -203,11 +198,11 @@ aside {
 
 @media only screen and (min-width: 1000px) {
     p {
-        text-align:left;
-        font-size:.5vw;
+        text-align: left;
+        font-size: .6vw;
         position: absolute;
-        bottom:13%;
-        right:17%;
+        bottom: 12%;
+        right: 15%;
         padding: var(--main-padding);
      }
 
@@ -220,9 +215,8 @@ aside {
      }
         
     nav {
-        margin-top:0;
-        margin-left:20%;
-       
+        margin-top: 0;
+        margin-left: 20%;  
     }
 
 }
