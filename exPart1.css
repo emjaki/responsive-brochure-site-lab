@@ -5,10 +5,10 @@
 
 .container {
     display: grid; 
-    height:100vh;
+    height: 100vh;
     grid-template-columns: 1fr 1.1fr 1.1fr 1.1fr 1fr; 
-    grid-template-rows: 0.7fr 0.6fr 1.4fr  2fr 0.3fr;
-    gap:0.4em 1em;
+    grid-template-rows: 0.7fr 0.6fr 1.4fr 2fr 0.3fr;
+    gap: 0.4em 1em;
     grid-template-areas:
       "header header header header header"
       "nav sub sub sub aside"
@@ -23,19 +23,19 @@ header {
 }
 
 h1 {
-    margin:0;
+    margin: 0;
     font-size: 3vw;
 }
 
 h2 {
-    margin-top:0;
+    margin-top: 0;
     font-size: 2vw;
 }
 
-nav{ 
+nav { 
     grid-area:nav;
     padding: var(--main-padding);
-    font-size:1.5vw;
+    font-size: 1.5vw;
 }
 
 li {
@@ -44,12 +44,12 @@ li {
 }
 /*test*/
 ul a +ul {
-    max-height:0;
-    overflow:hidden;
-    transition:0.5s linear;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s linear;
     }
   ul a:focus + ul {
-    max-height:15em;
+    max-height: 15em;
     }
   /* only select that link , here using the href attribute */
   a[href="nowhere"]:focus {
@@ -57,16 +57,16 @@ ul a +ul {
   }
 /*end test*/
 
-ul{
-    margin-top:0;
+ul {
+    margin-top: 0;
 }
 
 a {
-    text-decoration:none;
-    color:black;
+    text-decoration: none;
+    color: black;
 }
 
-a:hover{
+a:hover {
     color: #c74d00;
 }
 
@@ -76,29 +76,29 @@ article.subheading {
 
 h3 {
     font-size: 1.5vw;
-    margin-top:0;
+    margin-top: 0;
     padding: var(--main-padding);
 }
 
 img {
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 }
 
 .install {
-    grid-area:install;
+    grid-area: install;
 }
 
 article.room-col-1 {
-    grid-area:col-1;
+    grid-area: col-1;
 }
 
 article.room-col-2 {
-    grid-area:col-2;
+    grid-area: col-2;
 }
 
 article.room-col-3 {
-    grid-area:col-3;   
+    grid-area: col-3;   
 }
 
 .room-col-1 p, .room-col-2 p, .room-col-3 p {
@@ -111,12 +111,12 @@ footer {
 
 /*phone*/
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
     .container {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 0.5fr 0.3fr 1.5fr 1.5fr 2fr .20fr; 
-        gap: 0px 0.4em; 
+        grid-template-rows: 0.5fr 0.3fr 1.5fr 1.5fr 2fr .2fr; 
+        grid-gap: 0px 0.4em; 
         grid-template-areas: 
           "header header header"
           "nav nav nav"
@@ -135,14 +135,13 @@ footer {
     }
 
     nav {
-        padding:0%;
-        overflow:visible;
-        display:flex;
+        overflow: visible;
+        display: flex;
     }
 
     ul, li {
         padding: 1%;
-        font-size:4vw;
+        font-size: 4vw;
     }
 
     h3 {
@@ -150,13 +149,13 @@ footer {
     }
 
     article.subheading p {
-        grid-area:sub;
-        font-size:3.5vw;
+        grid-area: sub;
+        font-size: 3.5vw;
     }
 }
 
 /*tablet*/
-@media only screen and (min-width: 501px) and (max-width: 800px) {
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
     h1 {
         font-size: 4.5vw;
     }
@@ -166,20 +165,19 @@ footer {
     }
 
     nav {
-        padding:0%;
-        overflow:visible;
-        display:flex;
+        padding: var(--main-padding);
+        overflow: visible;
+        display: flex;
     }
 
     ul, li {
         padding: 1%;
-        font-size:2.5vw;
+        font-size: 2.5vw;
     }
 
     nav {
-        padding:0%;
-        overflow:visible;
-        display:flex;
+        overflow: visible;
+        display: flex;
     }
 
     h3 {
@@ -187,7 +185,7 @@ footer {
     }
 
     article.subheading p {
-        grid-area:sub;
-        font-size:2vw;
+        grid-area: sub;
+        font-size: 2vw;
     }
 }
