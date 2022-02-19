@@ -1,5 +1,7 @@
 # Project 1: The Brochure Site
 
+Surge link: https://uptight-cart.surge.sh
+
 ## Problem Statement
 
 You've been learning HTML and CSS over the previous lessons. You've been
